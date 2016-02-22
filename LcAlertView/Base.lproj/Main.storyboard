@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LcAlertView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZw-PO-sYs">
+                                <rect key="frame" x="225" y="90" width="150" height="45"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="NgM-Td-QTg"/>
+                                    <constraint firstAttribute="height" constant="45" id="U5f-7X-8cT"/>
+                                </constraints>
+                                <state key="normal" title="简单提示框"/>
+                                <connections>
+                                    <action selector="shorMsgClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bC9-9b-won"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dw-RQ-0b4">
+                                <rect key="frame" x="225" y="175" width="150" height="45"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Qgi-eo-oXi"/>
+                                    <constraint firstAttribute="width" constant="150" id="pxF-Yv-FTi"/>
+                                </constraints>
+                                <state key="normal" title="提示框">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="msgClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jlN-ya-sAg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pw5-3a-Lc2">
+                                <rect key="frame" x="225" y="262" width="150" height="45"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.25098040700000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="nxe-cF-hF9"/>
+                                    <constraint firstAttribute="height" constant="45" id="rsW-EP-voQ"/>
+                                </constraints>
+                                <state key="normal" title="输入提示框">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmationClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDC-mj-hyT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pw5-3a-Lc2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1yy-qd-Lhg"/>
+                            <constraint firstItem="KZw-PO-sYs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="3p9-bN-MAh"/>
+                            <constraint firstItem="1dw-RQ-0b4" firstAttribute="top" secondItem="KZw-PO-sYs" secondAttribute="bottom" constant="40" id="Ub0-ov-vLP"/>
+                            <constraint firstItem="KZw-PO-sYs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uk5-73-v8W"/>
+                            <constraint firstItem="1dw-RQ-0b4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l7a-xF-2rD"/>
+                            <constraint firstItem="Pw5-3a-Lc2" firstAttribute="top" secondItem="1dw-RQ-0b4" secondAttribute="bottom" constant="40" id="sJ3-ag-KfN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="340" y="429"/>
         </scene>
     </scenes>
 </document>

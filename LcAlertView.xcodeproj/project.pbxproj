@@ -14,6 +14,7 @@
 		260D6B241C7AFB4D00D65773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 260D6B231C7AFB4D00D65773 /* Assets.xcassets */; };
 		260D6B271C7AFB4D00D65773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 260D6B251C7AFB4D00D65773 /* LaunchScreen.storyboard */; };
 		260D6B321C7AFB4D00D65773 /* LcAlertViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D6B311C7AFB4D00D65773 /* LcAlertViewUITests.swift */; };
+		260D6B3D1C7AFB6C00D65773 /* LcAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260D6B3C1C7AFB6C00D65773 /* LcAlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		260D6B2D1C7AFB4D00D65773 /* LcAlertViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LcAlertViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		260D6B311C7AFB4D00D65773 /* LcAlertViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LcAlertViewUITests.swift; sourceTree = "<group>"; };
 		260D6B331C7AFB4D00D65773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		260D6B3C1C7AFB6C00D65773 /* LcAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LcAlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				260D6B251C7AFB4D00D65773 /* LaunchScreen.storyboard */,
 				260D6B281C7AFB4D00D65773 /* Info.plist */,
 				260D6B201C7AFB4D00D65773 /* LcAlertView.xcdatamodeld */,
+				260D6B3C1C7AFB6C00D65773 /* LcAlertView.swift */,
 			);
 			path = LcAlertView;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			files = (
 				260D6B1C1C7AFB4D00D65773 /* ViewController.swift in Sources */,
 				260D6B221C7AFB4D00D65773 /* LcAlertView.xcdatamodeld in Sources */,
+				260D6B3D1C7AFB6C00D65773 /* LcAlertView.swift in Sources */,
 				260D6B1A1C7AFB4D00D65773 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
